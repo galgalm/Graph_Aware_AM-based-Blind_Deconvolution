@@ -1,0 +1,39 @@
+# MATLAB autosave files
+*.asv
+*.autosave
+
+# MATLAB temporary files
+*.m~
+*~
+
+# Large data files - exclude all .mat files by default
+*.mat
+
+# Exception: Keep the brain data
+!Underlying Graphs/brain_data_processed.mat
+!Underlying Graphs/brain_data_66.mat
+
+# Exception: Keep all Results folder .mat files
+!Results/*.mat
+
+# Keep the legend
+!figures/legend_two_lines.eps
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+
+# MATLAB code generation
+codegen/
+slprj/
+
+# MATLAB build artifacts
+*.mex*
+*.p
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.sublime-*
+

@@ -1,0 +1,3 @@
+# This file ensures the avg_figures directory is tracked by git
+# Generated figures will be saved here when running PlotFunctions/Main_Plot.m
+
