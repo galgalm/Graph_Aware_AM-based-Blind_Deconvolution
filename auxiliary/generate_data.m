@@ -51,8 +51,6 @@ end
 
 end
 
-
-
 function [W,L,Psi, V,config]=generate_graph(config)
 
 switch config.graph_type

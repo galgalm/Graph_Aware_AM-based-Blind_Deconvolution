@@ -25,7 +25,7 @@ for k=1:max_iter
     cvx_end
 
     X_hat=reshape(A*g_tilde,N,P);
-    w=1./(X_hat+(1e-8));
+    w=1./(abs(X_hat)+(1e-8));
     
     % Check for convergence
     if k>1

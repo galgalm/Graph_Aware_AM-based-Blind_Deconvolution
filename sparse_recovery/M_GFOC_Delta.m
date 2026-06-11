@@ -23,34 +23,6 @@ end
 end
 
 
-function Xi = generate_candidate_set_with_constraint(Omega, N_Omega, s, delta)
-
-Xi = {};
-
-% For each support size k = 1 to s
-for k = 1:s
-    if k > length(N_Omega)
-        continue;
-    end
-    
-    % Generate all k-subsets of N[Ω]
-    combos = nchoosek(N_Omega, k);
-    
-    % Filter by constraint
-    for i = 1:size(combos, 1)
-        Lambda = combos(i, :)';
-        
-        % Check constraint: |Λ ∩ Ω| ≥ k - δ
-        intersection_size = length(intersect(Lambda, Omega));
-        if intersection_size >= k - delta
-            Xi{end+1} = Lambda;
-        end
-    end
-end
-
-end
-
-
 function Omega_opt = select_best_support(Xi_delta, pre_func)
 
 cost_best = -inf;
