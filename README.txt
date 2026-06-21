@@ -3,8 +3,8 @@ GRAPH-AWARE AM BLIND DECONVOLUTION - SIMULATION CODE
 ================================================================================
 
 This repository contains the MATLAB implementation for the paper:
-"Graph-Aware Alternating Minimization for Blind Deconvolution of Graph Filters
-and Signals"
+G. Morgenstern and T. Routtenberg, "Graph-Aware Alternating Minimization for Blind Deconvolution of Graph Filters and Signals," 
+in IEEE Signal Processing Letters, 2026, doi: 10.1109/LSP.2026.3704061.
 
 Authors: Gal Morgenstern and Tirza Routtenberg
 Date: January 2026
